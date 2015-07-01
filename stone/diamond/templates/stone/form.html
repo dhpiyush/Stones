@@ -1,0 +1,97 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Stones</title>
+
+  <!-- CSS  -->
+  <link href="{% static "css/materialize.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static "css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="navbar-fixed">
+  <nav>
+    <div class=" white nav-wrapper">
+      <a href="#" class="brand-logo left ">JEWEL DIAMOND</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="grey mdi-navigation-menu"></i></a>
+      <div class="text">
+      <ul id="nav-mobile" class="right hide-on-med-and-down ">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/RINGS">Rings</a></li>
+        <li><a href="/BANGLES">Bangles</a></li>
+        <li><a href="#">Earrings</a></li>
+        <li><a href="#">Necklaces</a></li>
+        <li><a href="#">Pendants</a></li>
+        <li><a href="#">Nose Pins</a></li>
+        <li><a href="#">Tanmaniya</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="/RINGS">Rings</a></li>
+        <li><a href="/BANGLES">Bangles</a></li>
+        <li><a href="#">Earings</a></li>
+        <li><a href="#">Necklaces</a></li>
+        <li><a href="#">Pendants</a></li>
+        <li><a href="#">Nose Pins</a></li>
+        <li><a href="#">Tanmaniya</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+        <div class="col s12 offset-m3 m7">
+          <div class="card">
+            <div class="card-content">
+              <form method="POST" action="/paci/form" >
+                {% csrf_token %}
+                <div class="row">
+                  <div class="input-field">
+                    {{ form.name }}
+                    <label for="{{ form.name.id_for_label }}">{{form.name.label}}</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    {{ form.email }}
+                    <label for="{{ form.email.id_for_label }}">{{form.email.label}}</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    {{ form.product_id }}
+                    <label for="{{ form.product_id.id_for_label }}">{{form.product_id.label}}</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field ">
+                    {{ form.number }}
+                    <label for="{{ form.number.id_for_label }}">{{form.number.label}}</label>
+                  </div>
+                </div>
+
+                
+                <button class="btn waves-effect waves-light red " onclick="Materialize.toast('Thank You for registering ', 8000)" type="submit" name="action">Send mail
+                  <i class="mdi-content-send right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="{% static "js/jquery-2.1.1.min.js" %}"></script>
+  <script src="{% static "js/materialize.js" %}"></script>
+  <script src="{% static "js/init.js" %}"></script>
+
+  </body>
+</html>

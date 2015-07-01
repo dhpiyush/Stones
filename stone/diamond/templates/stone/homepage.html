@@ -1,0 +1,157 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Stones</title>
+
+  <!-- CSS  -->
+  
+  <link href="{% static "css/materialize.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static "css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="navbar-fixed">
+  <nav>
+    <div class=" white nav-wrapper">
+      <a href="#" class="brand-logo left ">JEWEL DIAMOND</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="grey mdi-navigation-menu"></i></a>
+      <div class="text">
+      <ul id="nav-mobile" class="right hide-on-med-and-down ">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/RINGS">Rings</a></li>
+        <li><a href="/BANGLES">Bangles</a></li>
+        <li><a href="#">Earrings</a></li>
+        <li><a href="#">Necklaces</a></li>
+        <li><a href="#">Pendants</a></li>
+        <li><a href="#">Nose Pins</a></li>
+        <li><a href="#">Tanmaniya</a></li>
+        <li><a href="/form">Contact Us</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="/RINGS">Rings</a></li>
+        <li><a href="/BANGLES">Bangles</a></li>
+        <li><a href="#">Earings</a></li>
+        <li><a href="#">Necklaces</a></li>
+        <li><a href="#">Pendants</a></li>
+        <li><a href="#">Nose Pins</a></li>
+        <li><a href="#">Tanmaniya</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+       
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{% static "earrings/4.jpg" %}" alt="Unsplashed background img 2"> 
+        <div class="black-text caption center-align">
+          <h3>WELCOME!</h3>
+          <h5 class="black-text text-lighten-3">To the world of jewels</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static "pendant.jpg" %}" alt="Unsplashed background img 2"> 
+        <div class="caption left-align">
+          <h3>UNDERLINE YOUR PERSONALITY</h3>
+          <h5 class="light grey-text text-lighten-3"><u>SHOP NOW</u></h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static "rings/3.jpg" %}" alt="Unsplashed background img 2">
+        <div class="caption right-align">
+          <h3>DIAMONDS ARE THE BEST GIRLS FRIEND</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static "earrings/1.jpg" %}" alt="Unsplashed background img 2"> 
+        <div class="caption center-align">
+          <h3>USE JEWELRY'S MAGIC, BUY FINE JEWELRY</h3>
+          <h5 class="light grey-text text-lighten-3">SHOP NOW</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static "2.png" %}" alt="Unsplashed background img 2"> 
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static "3.jpg" %}" alt="Unsplashed background img 2"> 
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div> 
+
+  <main>
+              <div class="row">
+                {% for img in value %}
+                  <div id="display" class="col m5 s10">
+                      <div class="card small">
+                          <div class="card-image waves-effect waves-block waves-light">
+                            <a class="modal-trigger" href="#modal{{img.id}}"><img src="{{img.url}}" alt="{{img.image_type}}"></a>
+                          </div>
+                        <div class="center card-content">
+                            <a href="{{img.image_type}}">{{img.image_type}}</a> 
+                        </div>  
+                      </div>
+                  </div>
+
+                  <div id="modal{{img.id}}" class="modal">
+                    <div class="center modal-content">
+                      <img src="{{img.url}}" alt="Unsplashed background img 2">
+                      <h4>Product Details</h4>
+                      <p>{{img.image_type}}</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+                    </div>
+                  </div>
+                  
+                {% endfor %} 
+              </div>
+  </main>
+
+    <footer class="white page-footer">
+          <div class=" blue-grey lighten-2 footer-copyright">
+            <div class="container">
+              <p class="black-text">© 2015 JewelDiamond . All Copyrights Reserved</p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col l8 s12">
+                <p class="black-text text-lighten-4"><b>RINGS : </b> Engagement Rings | Gold Rings | Diamond Rings | Women's Rings | Men's Rings | Bridal Rings<br>
+                <b>PENDANTS : </b>Diamond Pendants | Gold Pendants | Platinum Pendants | Casual Pendants | Fashion Pendants<br>
+                <b>BANGLES :</b> Gold Bangles | Diamond Bangles | Gemstone Bangles<br>
+                <b>EARRINGS : </b>Gold Earrings | Diamond Earrings | Platinum Earrings | Earrings For Girls | Jhumkas Earrings | Studs Earrings | Drop Earrings<br>
+                <b>NECKLACES AND CHAINS : </b>Mangalsutra | Chains | Necklaces | Diamond Necklaces | Gold Necklaces | Gold Chains | Chains for Girls | Chains for Boys
+                </p>
+              </div>
+              <div class="col l2 offset-l2 s12">
+                <h5 class="black-text">CONTACT US</h5>
+                <ul>
+                  <li><a class="black-text text-lighten-3" href="#!">Vinay kumar Dhingra</a></li>
+                  <li><a class="black-text text-lighten-3" href="#!">contactus@jeweldiamond.com</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+  </footer>
+
+  <script src="{% static "js/jquery-2.1.1.min.js" %}"></script>
+  <script src="{% static "js/materialize.js" %}"></script>
+  <script src="{% static "js/init.js" %}"></script>
+
+  </body>
+</html>
