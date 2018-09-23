@@ -18,7 +18,7 @@
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="grey mdi-navigation-menu"></i></a>
       <div class="text">
       <ul id="nav-mobile" class="right hide-on-med-and-down ">
-        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/RINGS">Rings</a></li>
         <li><a href="/BANGLES">Bangles</a></li>
         <li><a href="#">Earrings</a></li>
@@ -26,7 +26,7 @@
         <li><a href="#">Pendants</a></li>
         <li><a href="#">Nose Pins</a></li>
         <li><a href="#">Tanmaniya</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li class="active"><a href="/form">Contact Us</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="/RINGS">Rings</a></li>
@@ -36,21 +36,28 @@
         <li><a href="#">Pendants</a></li>
         <li><a href="#">Nose Pins</a></li>
         <li><a href="#">Tanmaniya</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="/form">Contact Us</a></li>
       </ul>
       </div>
     </div>
   </nav>
 </div>
 
+<div id="index-banner" class="parallax-container">
+    <div class="parallax"><img src="{% static "map.png" %}" alt="Unsplashed background img 2"></div>
+</div>
+
 <div class="container">
   <div class="section">
     <div class="row">
-        <div class="col s12 offset-m3 m7">
+        <div class="col s12 m7">
           <div class="card">
             <div class="card-content">
-              <form method="POST" action="/paci/form" >
+              <form method="POST" action="/form" >
                 {% csrf_token %}
+                <div class="blue-grey-text center row">
+                  <h4>SEND US AN E-MAIL </h4>
+                </div>
                 <div class="row">
                   <div class="input-field">
                     {{ form.name }}
@@ -65,14 +72,14 @@
                 </div>
                 <div class="row">
                   <div class="input-field">
-                    {{ form.product_id }}
-                    <label for="{{ form.product_id.id_for_label }}">{{form.product_id.label}}</label>
+                    {{ form.number }}
+                    <label for="{{ form.number.id_for_label }}">{{form.number.label}}</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field ">
-                    {{ form.number }}
-                    <label for="{{ form.number.id_for_label }}">{{form.number.label}}</label>
+                    {{ form.message }}
+                    <label for="{{ form.message.id_for_label }}">{{form.message.label}}</label>
                   </div>
                 </div>
 
@@ -84,7 +91,15 @@
             </div>
           </div>
         </div>
-      </div>
+      
+        <div class="col s12 m5">
+          <h4 class="blue-grey-text">CONTACT INFO </h4>
+          <p>Address : Chandani chowk , Delhi-6<br>
+            Phone : 989898<br>
+            Email : piyushdh94@gmail.com
+          </p>
+
+        </div>
     </div>
   </div>
 </div>

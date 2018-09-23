@@ -5,8 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
- body{color: black ;}
-
+ body{color: black ;} 
 
 #dropdown1 {margin-top: 80px ;}
 
@@ -14,8 +13,8 @@
       width: 100px ;}
 
 
-#display{margin-right: 50px ;
-          margin-left: 30px;
+#display{margin-right: 50px ; 
+          margin-left: 30px;  
 }
 
 .card{margin-right: 50px ;
@@ -102,3 +101,4 @@ a.button-collapse.top-nav.full {
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+
