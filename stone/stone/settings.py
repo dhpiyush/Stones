@@ -99,5 +99,5 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
-STATIC_ROOT = '/var/www/Stones/stone/static'
+STATIC_ROOT = '/var/www/Stones/stone/diamond/static'
 STATIC_URL = '/static/'
