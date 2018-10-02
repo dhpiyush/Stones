@@ -53,14 +53,14 @@
   <div class="slider">
     <ul class="slides">
       <li>
-        <img src="{% static "earrings/4.jpg" %}" alt="Unsplashed background img 2"> 
+        <img src="{% static "showcase.jpg" %}" alt="Unsplashed background img 2"> 
         <div class="black-text caption center-align">
           <h3>WELCOME!</h3>
           <h5 class="black-text text-lighten-3">To the world of jewels</h5>
         </div>
       </li>
       <li>
-        <img src="{% static "pendant.jpg" %}" alt="Unsplashed background img 2"> 
+        <img src="{% static "wedding5.jpg" %}" alt="Unsplashed background img 2"> 
         <div class="caption left-align">
           <h3>UNDERLINE YOUR PERSONALITY</h3>
           <h5 class="light grey-text text-lighten-3"><u>SHOP NOW</u></h5>
@@ -74,21 +74,21 @@
         </div>
       </li>
       <li>
-        <img src="{% static "earrings/1.jpg" %}" alt="Unsplashed background img 2"> 
+        <img src="{% static "jewels.jpg" %}" alt="Unsplashed background img 2"> 
         <div class="caption center-align">
           <h3>USE JEWELRY'S MAGIC, BUY FINE JEWELRY</h3>
           <h5 class="light grey-text text-lighten-3">SHOP NOW</h5>
         </div>
       </li>
       <li>
-        <img src="{% static "2.png" %}" alt="Unsplashed background img 2"> 
+        <img src="{% static "marriage.jpg" %}" alt="Unsplashed background img 2"> 
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img src="{% static "3.jpg" %}" alt="Unsplashed background img 2"> 
+        <img src="{% static "wedding3.jpg" %}" alt="Unsplashed background img 2"> 
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -100,7 +100,7 @@
   <main>
               <div class="row">
                 {% for img in value %}
-                  <div id="display" class="col m5 s10">
+                  <div id="display" class="col l4 m6 s12">
                       <div class="card small">
                           <div class="card-image waves-effect waves-block waves-light">
                             <a class="modal-trigger" href="#modal{{img.id}}"><img src="{{img.url}}" alt="{{img.image_type}}"></a>

@@ -5,33 +5,46 @@
  *
  * Made By MaterializeCSS.com
  */
- body{color: black ;} 
+body{color: black ;} 
+
+.slider{
+    width: 90% !important;
+    margin-left: 5% !important;
+}
+
+.card{
+  margin-right: 20px !important;
+}
 
 #dropdown1 {margin-top: 80px ;}
 
 #log{height: 100px;
       width: 100px ;}
 
-
-#display{margin-right: 50px ; 
-          margin-left: 30px;  
+.card.small {
+  height: 325px !important;
 }
 
 .card{margin-right: 50px ;
       }
 
-nav .brand-logo{color: #607d8b;}
+nav .brand-logo{
+  color: #607d8b;
 
-.card.small .card-image{height: 250px;
-                         width: 100%;
-                          }
+}
+
+.card.small .card-image{
+  height: 260px;
+  width: 100%;
+}
 
 nav ul a{color: #000000 ;}
 
 main{
-          margin-left: 100px;
-          margin-right: 100px ;
-          padding-left: 50px;
+          margin-left: 5%;
+          margin-right: 5% ;
+          padding-left: 3%;
+          padding-right: 2%;
           background-color: #cfd8dc ;
           padding-top: 50px;
           padding-bottom: 50px ;
@@ -79,6 +92,15 @@ a.button-collapse.top-nav.full {
   .container {
     width: 85%;
   }
+}
+
+@media only screen and (max-width : 600px) {
+  
+  nav .brand-logo{
+  width: 100%
+
+  }
+
 }
 
 @font-face {
