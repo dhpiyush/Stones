@@ -12,6 +12,12 @@ body{color: black ;}
     margin-left: 5% !important;
 }
 
+.display-card a{
+  font-size: 21px;
+  color: #607d8b !important;
+  font-family: Calibri;
+}
+
 .card{
   margin-right: 20px !important;
 }
@@ -101,6 +107,14 @@ a.button-collapse.top-nav.full {
 
   }
 
+  .card.small {
+    height: 285px !important;
+  }
+
+  .card.small .card-image {
+    height: 220px !important;
+    width: 100%;
+  }
 }
 
 @font-face {

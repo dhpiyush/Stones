@@ -2,8 +2,10 @@
 
 Deploying it to digital ocean :
 https://jee-appy.blogspot.com/2015/04/deploy-django-project-on-apache-using.html
+Youtube: https://www.youtube.com/watch?v=Y-CT_l1dnVU	 
 
 If apache server dont work:
 sudo lsof -i :80
 kill -9 pid
 
+Now restart apache server

@@ -22,6 +22,10 @@ urlpatterns = [
     url(r'^$', views.home),
     url(r'^RINGS$', views.ring),
     url(r'^BANGLES$', views.bangle),
+    url(r'^PENDANTS$', views.pendant),
+    url(r'^EARRINGS$', views.earring),
+    url(r'^NECKLACES$', views.necklace),
+    url(r'^successPage$', views.success),
     url(r'^form$', views.form),
 
 ]

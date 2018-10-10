@@ -14,8 +14,8 @@
 <div class="navbar-fixed">
   <nav>
     <div class=" white nav-wrapper">
-      <a href="#" class="brand-logo left ">JEWEL DIAMOND</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="grey mdi-navigation-menu"></i></a>
+      <a href="/" class="brand-logo left ">JEWEL DIAMOND</a>
+      <a href="/" data-activates="mobile-demo" class="button-collapse"><i class="grey mdi-navigation-menu"></i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down ">
         <li><a href="/">Home</a></li>
         <li><a href="/RINGS">Rings</a></li>
@@ -23,9 +23,9 @@
         <li><a href="/EARRINGS">Earrings</a></li>
         <li><a href="NECKLACES">Necklaces</a></li>
         <li><a href="/PENDANTS">Pendants</a></li>
-        <li><a href="/NOSEPINS">Nose Pins</a></li>
-        <li><a href="/TANMANIYA">Tanmaniya</a></li>
-        <li><b><a href="#">Contact Us</a></b></li>
+        <!-- <li><a href="/NOSEPINS">Nose Pins</a></li>
+        <li><a href="/TANMANIYA">Tanmaniya</a></li> -->
+        <li><b><a href="/form">Contact Us</a></b></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="/RINGS">Rings</a></li>
@@ -33,9 +33,9 @@
         <li><a href="/EARRINGS">Earings</a></li>
         <li><a href="/NECKLACES">Necklaces</a></li>
         <li><a href="/PENDANTS">Pendants</a></li>
-        <li><a href="/NOSEPINS">Nose Pins</a></li>
-        <li><a href="/TANMANIYA">Tanmaniya</a></li>
-        <li><b><a href="#">Contact Us</a></b></li>
+        <!-- <li><a href="/NOSEPINS">Nose Pins</a></li>
+        <li><a href="/TANMANIYA">Tanmaniya</a></li> -->
+        <li><b><a href="/form">Contact Us</a></b></li>
       </ul>
     </div>
   </nav>
@@ -50,7 +50,7 @@
                         <div class="card-image waves-effect waves-block waves-light">
                             <a class="modal-trigger" href="#modal{{img.id}}"><img src="{{img.url}}" alt="{{img.price}}"></a>
                         </div>
-                        <div class="center card-content">
+                        <div class="center card-content display-card">
                             <a href="">{{img.price}}</a>
                         </div>  
                     </div>
@@ -59,7 +59,6 @@
                       <img src="{{img.url}}" alt="Unsplashed background img 2">
                       <h5>PRODUCT DETAILS</h5>
                       <p>{{img.price}}</p>
-                      <p>{{img.id}}</p>
                       <table class="striped">
                         <thead>
                           <tr>
@@ -77,7 +76,7 @@
                         <tbody>
                           <tr>
                             <td>Total Weight</td>
-                            <td>....</td>
+                            <td>{{img.diamond_weight}}</td>
                             
                           </tr>
                           <tr>
@@ -100,15 +99,14 @@
                           </tr>
                           <tr>
                             <td>Weight(approx)</td>
-                            <td>....</td>
-                            
+                            <td>{{img.gold_weight}}</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
 
                     <div class="modal-footer">
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+                      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
                     </div>
                   </div>
                   </div>
