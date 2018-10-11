@@ -101,3 +101,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 STATIC_ROOT = '/var/www/Stones/stone/diamond/static/'
 STATIC_URL = '/static/'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'f20130710g@alumni.bits-pilani.ac.in'
+EMAIL_HOST_PASSWORD = '432165'
