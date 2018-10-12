@@ -23,7 +23,7 @@ body{color: black ;}
 }
 
 .card{
-  margin-right: 20px !important;
+  margin-right: 0px !important;
 }
 
 #dropdown1 {margin-top: 80px ;}
@@ -34,9 +34,6 @@ body{color: black ;}
 .card.small {
   height: 325px !important;
 }
-
-.card{margin-right: 50px ;
-      }
 
 nav .brand-logo{
   color: #607d8b;
