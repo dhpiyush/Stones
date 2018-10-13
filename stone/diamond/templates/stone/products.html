@@ -9,17 +9,6 @@
   <!-- CSS  -->
   <link href="{% static "css/materialize.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="{% static "css/style.css" %}" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127441350-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-127441350-1');
-  </script>
-
 </head>
 <body>
 <div class="navbar-fixed">
@@ -63,7 +52,7 @@
                             <a class="modal-trigger" href="#modal{{img.id}}"><img src="{{img.url}}" alt="{{img.price}}"></a>
                         </div>
                         <div class="center card-content display-card">
-                          <span style="color: white;margin-right: 10px;background: #607d8b;padding: 10px;">{{img.id}}</span>
+                          <span style="color: red ">{{img.id}}</span>
                           <a href="">{{img.price}}</a>
                         </div>  
                     </div>
@@ -130,7 +119,7 @@
   <footer class="white page-footer">
           <div class=" blue-grey lighten-2 footer-copyright">
             <div class="container">
-              <p class="black-text">© 2018 JewelDiamond . All Copyrights Reserved</p>
+              <p class="black-text">© 2015 JewelDiamond . All Copyrights Reserved</p>
             </div>
           </div>
           <div class="container">
