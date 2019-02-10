@@ -9,3 +9,6 @@ sudo lsof -i :80
 kill -9 pid
 
 Now restart apache server
+
+After buying domain name from goDaddy, follow the steps:
+https://top5hosting.co.uk/blog/uk-hosting/361-connecting-a-godaddy-domain-with-digitalocean-droplet-step-by-step-guide-with-images
